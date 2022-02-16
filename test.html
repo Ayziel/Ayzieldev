@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src='script.js'> </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_xodAsqwDFKtUEL7sOLtpX");
+})();
+</script>
+
+
+
+</head>
+
+<body>
+  <form onsubmit="func()">
+    <span class="html">&lt;form&gt;</span>
+    <div class="Form_Top" >
+        <input id="MyName" class="Form_Name" type="text" name="Name" placeholder="Name" >
+        <input id="MyEmail" class="Form_Email"type="text" name="Email" placeholder="Email" >
+    </div> 
+    <div class="Form_Middle">
+        <input id="MySubject" class="Form_Subject" type="text" name="subject" placeholder="Subject" >
+    </div>
+    <div class="Form_Bottom">
+        <textarea id="MyMessage" class="Form_Textarea" rows="12" cols="50" placeholder="Message"></textarea>
+    </div>
+    <div class="CbuttonC"  >
+      <button type= "submit"  onclick="SentEmail()" class="CButton"> Submit </button>
+      <span class="html">&lt;form&gt;</span>
+  </div>
+  
+</form>
+
+
+</body>
+
+</html>
