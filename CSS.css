@@ -1081,6 +1081,17 @@ justify-content: center;
     
   }
 
+  .dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    height: 120%;
+    width: 0%;
+    border-left: none;
+    left: 0;
+    animation: typing 1.5s steps(10) infinite;
+    background: #212121;
+  }
+
   /*3rd page */
 
 
