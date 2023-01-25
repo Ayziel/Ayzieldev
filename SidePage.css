@@ -533,6 +533,7 @@ Start Skill Leftside
   font-size: clamp(0.8rem, 23vw, 14rem);
   font-family: "Ubunt", sans-serif;
   color:#2e2e2e;
+  z-index: -1;
   
 }
 
