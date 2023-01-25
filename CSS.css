@@ -16,11 +16,12 @@
 
 body {
   background: #212121;
+ 
 }
 
 h2 {
   font-size: 4.5rem;
-  width: 17em;
+  width: 100%;
   margin: auto 0;
   font-family: "Ubunt", sans-serif;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -28,6 +29,8 @@ h2 {
   color: #26ffc2;
   margin-bottom: 1rem;
   margin-top: 0.5rem;
+  padding-left: 1rem;
+
 }
 
 p {
@@ -44,6 +47,8 @@ p {
 .WEBSITE_CONTAINER {
   /*excluding Navigation Menu*/
   margin-left: 10.6em;
+
+
 }
 
 /*#endregion Default*/
@@ -986,7 +991,9 @@ justify-content: center;
   .Icons {
     display: none;
   }
-
+pre{
+  display: none;
+}
   p {
     font-family: "Jost", sans-serif;
     color: white;
@@ -999,7 +1006,7 @@ justify-content: center;
 
   h2 {
     font-size: 6.5vw;
-    width: 17em;
+    width: 100%;
     margin: auto 0;
     font-family: "Ubunt", sans-serif;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -1011,7 +1018,7 @@ justify-content: center;
 
   .WEBSITE_CONTAINER {
     /*excluding Navigation Menu*/
-    margin-left: 0.6em;
+    margin-left: 0;
   }
   .html,
   .htmlsolo {
@@ -1071,14 +1078,14 @@ justify-content: center;
   }
   .image__title {
     color: white;
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
   }
 
   .image__description {
     color: white;
     width: 50%;
     text-align: center;
-    font-size: 1rem;
+    font-size: clamp(.8rem, 1.5vw, 1rem);
     
   }
 
