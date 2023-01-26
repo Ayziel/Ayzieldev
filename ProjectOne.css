@@ -1,0 +1,412 @@
+/*#region Default*/
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500;600&family=Solitreo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500;600&family=Mukta:wght@400;600&family=Solitreo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+a{
+    cursor: pointer;
+}
+
+
+/*#endregion Default*/
+
+
+
+/*#region Top*/
+.Top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    background-color: #77a0b1;
+    margin-bottom: 1rem;
+}
+.Top-Contact, .Top-Icons{
+    list-style-type: none;
+    padding-inline-start: none;
+    display:flex;
+    color: white;
+}
+.Top-Contact li, .Top-Icons li{
+    margin: 0 0.6rem;
+    transition: 0.25s;
+    font-size: 1.2rem;
+}
+.Top-Contact li{
+    font-family: 'Solitreo', cursive;
+    font-size: 1.2rem;
+  
+}
+.Top-Icons li:nth-child(4){
+    margin-right: 1.5rem;
+}
+
+.Top-Icons li:hover{
+    transform: scale(1.5);
+    color:#202847;
+}
+/*#endregion Top*/
+
+/*#region Navigation*/
+.Navigation-container{
+    
+    height: 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+    margin-bottom: 0.5rem;
+ 
+}
+.logo{
+    width: 6rem;
+}
+
+.Nav-List{
+    list-style-type: none;
+    padding-inline-start: none;
+    display:flex;
+    color: #202847;
+    align-items: center;
+    height: 100%;
+    font-family: 'Mukta', sans-serif;
+    font-weight:400;
+    font-size: clamp(0.85rem, 1vw, 1.2rem)
+ 
+}
+
+.Nav-List li{
+    margin: 0 1rem;
+    transition: 0.25s;
+}
+.Nav-List li:hover{
+    transform: scale(1.5);
+   
+   }
+.Book-btn{
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-radius: 0.3rem;
+}
+.Book-btn:hover{
+    background-color: #202847;
+    color: white;
+}
+
+/*#endregion Top*/
+
+/*#region FrontPage*/
+
+.carousel-caption{
+
+    background-color: rgba(0,0,0,.7);
+    border-radius: 1rem;
+    
+}
+
+/*#endregion FrontPage*/
+
+/*#region SecondPage*/
+
+.Second-Page{
+    display: flex;
+    margin-bottom: 10vh;
+}
+
+.Second-Page-Description{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding: 0 5%;
+ width:50%;
+}
+.Second-Page-Description h1{
+background-color: #80b4c5;
+color: white;
+border-radius: 0.2rem;
+padding: 0.5rem 1rem;
+font-size: 4rem;
+margin-bottom: 3rem;
+font-size: clamp(1.1rem, 4vw ,4rem)
+}
+.Second-Page-Description h4{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: clamp(1rem, 3vw ,3rem);
+
+}
+.Photography{
+    color: #80b4c5;
+    
+}
+
+.Second-Page-Description p{
+    font-size: 1.2rem;
+    font-size: clamp(0.9rem, 1.2vw ,1.2rem);
+    margin-bottom: 2rem;
+    
+}
+.Second-Page-Contact-Btn{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.2rem;
+    align-self: flex-start;
+    margin-left: 0.5rem;
+    transition: 0.25s;
+}
+
+.Second-Page-Contact-Btn:hover{
+    background-color: #202847;
+    color: white;
+}
+
+.Second-Page-Photo{
+    width: 50%;
+    background-color: #213c47;
+}
+.Second-Page-Photo img{
+    width: 100%;
+}
+
+/*#endregion SecondPage*/
+
+/*#region ThirdPage*/
+
+.Third-Page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15vh;
+}
+
+.Blobs{
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left: 0;
+    opacity: 30%;
+    width: 60%;
+}
+.Third-Page-Desription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Third-Page-cards{
+    display: flex;
+    
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+    border-radius: 1rem;
+    width: 25%;
+    margin: 3%;
+    padding: 2rem;
+    
+    
+    box-shadow: 5px 10px 5px #213c47; ;
+}
+.Service-Icon{
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #2d5463;
+}
+.cards h6{
+    color: black;
+}
+.cards p{
+    text-align: center;
+}
+
+/*#endregion ThirdPage*/
+
+
+/*#region ForuthPage*/
+
+
+.Fourth-Page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.background{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+}
+.Fourth-Page-Description{
+   
+    width: 50%;
+    margin-bottom: 4vh;
+}
+
+.Fourth-Page-Contact-Side-Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15vh;
+    width: 100%;
+}
+
+.Contact-Form{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.3rem 0.3rem 0.5rem#2c2c2c ;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+
+}
+.Contact-Form h1{
+font-size: 1.5rem;
+align-self: start;
+padding: 1rem;
+}
+
+.Contact-Form input{
+margin: 1rem 0rem;
+box-shadow: 0.05rem 0.05rem 0.3rem#2c2c2c ;
+border-color: white;
+padding:0.5rem;
+border-radius: 0.5rem;
+font-size: 0.8rem;
+
+}
+.Message{
+    margin: 1.5rem 0;
+    resize: none;
+    height: 8rem;
+    box-shadow: 0.05rem 0.05rem 0.3rem#2c2c2c ;
+    border-color: white;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.side{
+    align-self: flex-end;
+    margin: 3rem;
+}
+.side p:nth-child(1){
+    align-self: flex-end;
+    font-weight: bold;
+    text-align: start;
+    font-size: 1.2rem;
+   
+}
+.side i{
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+.Submit{
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 0.4rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem black ;
+    font-weight:700;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Submit:hover{
+    
+    background-color: #202847;
+    color: white;
+}
+
+/*#endregion ForuthPage*/
+
+/*#region MediaFix*/
+
+.dropdown{
+    display: none;
+     right: 0;
+    position: fixed;
+    z-index: 1;
+    padding: 1rem;
+}
+/*#endregion MediaFix*/
+
+
+@media all and (max-width: 950px) {
+
+.Top, .Navigation-container{
+    display:none;
+}
+.dropdown{
+    display: block;
+}
+.Second-Page-Photo{
+    display: none;
+    width: 0%;
+}
+.Second-Page-Description{
+    margin-top: 1rem;
+    width:100%;
+   }
+.Third-Page-cards{
+    padding: 1rem;
+  }
+
+  .Third-Page{
+
+    margin-bottom: 1rem;
+}
+
+  .Third-Page-Desription{
+    width: 100%;
+  }
+  .Third-Page-Desription p{
+    text-align: center;
+  }
+.Third-Page-cards{
+  display: block;
+}
+.cards{
+    width: 95%;
+}
+
+
+.Fourth-Page-Description{
+   
+    width: 90%;
+    margin-bottom: 4vh;
+}
+.Fourth-Page-Contact-Side-Container{
+    flex-direction: column;
+}
+
+.Contact-Form{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.3rem 0.3rem 0.5rem#2c2c2c ;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    width:90%;
+
+}
+}
