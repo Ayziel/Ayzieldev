@@ -358,8 +358,16 @@ font-size: 0.8rem;
     display: none;
      right: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     padding: 1rem;
+  
+    
+}
+.dropdown-menu{
+    transition: 0.1s;
+}
+.btn{
+    border-radius: 1rem;
 }
 /*#endregion MediaFix*/
 
