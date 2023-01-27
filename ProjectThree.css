@@ -201,8 +201,8 @@ margin-bottom: 1rem;
     padding: 1rem;
     font-size: clamp(1rem, 2vw, 2rem);;
     font-family: 'Prompt', sans-serif;
-    background-color: #1A120B;
-
+    background-color: #000000;
+    
     box-shadow: 1px 1px 1px black;
     transform: translate(-10%, 0%);
     color: white;
@@ -302,7 +302,7 @@ border-radius: 0.5rem;
     transform: translate(-50%, -50%) rotate(-5deg) scale(2);
     z-index: -1;
     background-color: #3C2A21;
-    box-shadow: inset 3px 3px 3px black;
+    box-shadow:  3px 3px 3px black;
     
  
 }
