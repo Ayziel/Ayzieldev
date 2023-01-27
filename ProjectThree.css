@@ -361,10 +361,10 @@ border-radius: 0.5rem;
 .Third-Page{
     display: flex;
     flex-direction: column;
-    background-color: #3C2A21;
+    background-color: #0e0c0b;
     align-items: center;
     justify-content: center;
-    box-shadow: -10px -5px 20px black;
+    box-shadow: -10px -5px 20px rgb(17, 14, 12);
    
     color: white;
 }
