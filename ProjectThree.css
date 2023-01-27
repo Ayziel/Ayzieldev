@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+/*#region Default*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    background-color: white;
+    position: relative;
+  
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+
+a{
+    cursor: pointer;
+}
+
+/*#endregion Default*/
+
+/*#region FirstPage*/
+.First-Page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 5%;
+}
+.First-Page-Background{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+/*#region Navigation*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    color: white;
+    margin-bottom: 5%;
+}
+.Logo-Container{
+    display: flex;
+    align-items: center;
+}
+.Logo{
+    font-size: clamp(2rem, 4vw, 4rem);
+    padding: 0 1rem;
+    
+}
+.Logo-Text{
+    font-size: clamp(1rem, 1.9vw, 1.9rem);
+    font-family: 'Solitreo', cursive;
+}
+.Logo-Text-Bold{
+    font-weight: bold;
+    color:rgb(226, 140, 28);
+}
+.Nav-links-Container{
+    display: flex;
+    list-style: none;
+}
+.Nav-links-Container li{
+ padding: 1.2rem;
+ font-family: 'Prompt', sans-serif;
+ font-size: clamp(1rem, 1.15vw, 1.15rem);
+ 
+}
+.Nav-links-Container li:hover{
+    transform: scale(1.3);
+    color: rgb(224, 185, 11);
+   }
+/*#endregion Navigation*/
+
+/*#region Content*/
+
+.First-Page-Content{
+display: flex;
+color: white;
+align-items: center;
+
+}
+.First-Page-Description{
+margin: 5% 5%;
+width: 40%;
+}
+.First-Page-Description h1{
+  font-size: clamp(1.5rem, 2.7vw, 2.7rem);
+  margin-bottom: 2rem;
+  font-family: 'Prompt', sans-serif;
+  
+}
+
+.First-Page-Description p{
+    font-size: clamp(1rem, 1.3vw, 1.3rem);
+    margin-bottom: 10%;
+    font-family: 'Solitreo', cursive;
+  }
+  .Order-Now-Btn{
+    padding: .8rem 1.3rem ;
+    border-radius: 2rem;
+    background-color:rgb(226, 140, 28);
+    border: none;
+    font-family: 'Prompt', sans-serif;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    color: white;
+    margin-left: 1rem;
+  }
+  .Order-Now-Btn:hover{
+    background-color:rgb(116, 72, 15);
+    transform: scale(1.2);
+  }
+  .Order-Now-Btn:active{
+    background-color:rgb(116, 72, 15);
+    transform: scale(1.1);
+  }
+/*#endregion Content*/
+
+/*#endregion FirstPage*/
+
+/*#region SecondPage*/
+/*#region Best sellers*/
+.Second-Page{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3% ;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+
+.Second-Page-Main-Content{
+    width: 55%;
+    background-color: white;
+    border-radius: 4rem;
+}
+.Second-Page-Main-Content h1{
+    text-align: center;
+    padding: 1rem;
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-family: 'Prompt', sans-serif;
+}
+.Image-list-container{
+    list-style: none;
+}
+.Image-Divider{
+    display: flex;
+    padding: 1rem;
+}
+
+.Image-list-container li {
+    display: flex;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    border: 1px dashed brown;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+}
+.Image-list-container li div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Image-list-container li div h2{
+margin-bottom: 1rem;
+}
+.Image-list-container li img{
+    width: 50%;
+    height: 100%;
+    border-radius: 0.5rem;
+    
+
+}
+/*#endregion Best sellers*/
+
+.Second-Page-Side-Container{
+    width: 45%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Second-Page-Side-Container h1{
+    text-align: center;
+    padding: 1rem;
+    font-size: clamp(1rem, 2vw, 2rem);;
+    font-family: 'Prompt', sans-serif;
+    background-color: #1A120B;
+
+    box-shadow: 1px 1px 1px black;
+    transform: translate(-10%, 0%);
+    color: white;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
+    transform: rotate(-5deg) translate(-10%, -50%);
+}
+
+
+
+/*#region Cards*/
+
+
+
+.card-group{
+    width: 100%;
+}
+
+.card-group
+.cardss{
+    aspect-ratio: 5 / 7;
+}
+
+.card-group,
+.big-cards {
+    width: 30vmin;
+    background-color: green;
+    z-index: 1;
+
+}
+
+
+.cardss{
+    background-color: rgba(0,0,0,0.09);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+.cardss img{
+width: 100%;
+height: 100%;
+border-radius: 0.5rem;
+}
+.big-cards{
+    width: 30vmin;
+    border-radius: 1vmin;
+    color: white;
+}
+
+
+.Small-cards{
+    width: 12vmin;
+    border-radius: 2vmin;
+  
+   
+}
+
+.big-cards:nth-child(1){
+    transform: translate(-50%, -50%) rotate(-5deg);
+    z-index: 1;
+}
+.big-cards:nth-child(2){
+    transform: translate(-50%, -50%) rotate(5deg);
+    z-index: 2;
+}
+.big-cards:nth-child(3){
+    transform: translate(-50%, -50%) rotate(0deg);
+    z-index: 3;
+}
+
+.big-cards:nth-child(4){
+    transform: translate(-50%, -50%) rotate(-5deg);
+    z-index: 5;
+}
+
+.Small-cards:nth-child(5){
+    transform: translate(-50%, -50%) rotate(-20deg);
+    z-index: 3;
+}
+.Small-cards:nth-child(6){
+    transform: translate(-50%, -50%) rotate(-20deg);
+    z-index: 3;
+ 
+}
+.Small-cards:nth-child(7){
+    transform: translate(-50%, -50%) rotate(-20deg);
+    z-index: 4;
+}
+
+.Small-cards:nth-child(8){
+    transform: translate(-50%, -50%) rotate(-20deg);
+    z-index: 4;
+}
+.big-cards:nth-child(9){
+    transform: translate(-50%, -50%) rotate(-5deg) scale(2);
+    z-index: -1;
+    background-color: #3C2A21;
+    box-shadow: inset 3px 3px 3px black;
+    
+ 
+}
+
+
+
+
+
+.card-group:hover > .big-cards:nth-child(1){
+    transform: translate(-100%, -45%) rotate(-20deg);
+}
+.card-group:hover >  .big-cards:nth-child(2){
+    transform: translate(-60%, -48%) rotate(-10deg);
+   
+}
+.card-group:hover >  .big-cards:nth-child(3){
+    transform: translate(-10%, -45%) rotate(10deg);
+
+}
+
+.card-group:hover > .big-cards:nth-child(4){
+    transform: translate(30%, -35%) rotate(25deg);
+  
+}
+
+.card-group:hover >  .Small-cards:nth-child(5){
+    transform: translate(-250%, 100%) rotate(-10deg);
+  
+}
+.card-group:hover >  .Small-cards:nth-child(6){
+    transform: translate(-180%, -180%) rotate(10deg);
+  
+}
+.card-group:hover > .Small-cards:nth-child(7){
+    transform: translate(155%, -180%) rotate(-10deg);
+  
+}
+
+.card-group:hover > .Small-cards:nth-child(8){
+    transform: translate(190%, 150%) rotate(10deg);
+  
+}
+
+
+
+
+
+/*#endregion Cards*/
+
+
+
+
+/*#endregion SecondPage*/
+
+/*#region ThirdPage*/
+.Third-Page{
+    display: flex;
+    flex-direction: column;
+    background-color: #3C2A21;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -10px -5px 20px black;
+   
+    color: white;
+}
+.Closing{
+    display: flex;
+    justify-content: space-around;
+    padding: 1% 0;
+    width: 80%;
+}
+.Closing ul{
+list-style: none;
+}
+.Closing ul li{
+    font-size: clamp(1rem, 1vw, 1rem);
+    margin-top: 0.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+.Closing ul li:nth-child(1){
+    font-size: clamp(1.3em, 1.5vw, 1.5rem);
+    margin-bottom: 1rem;
+}
+.CopyWrite{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 5rem;
+    width: 90%; 
+
+}
+.CopyWrite p{
+    padding: 0.5rem 0rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Closing-list{
+ display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.Closing-list li{
+    display: flex;
+    margin: 0 0.5rem;
+ 
+   }
+.Closing ul li a:hover{
+  color: #1A120B;
+
+   }
+
+
+/*#endregion ThirdPage*/
+
+
+
+.Logo-Mobile{
+    display: none;
+}
+
+#Mobile-Nav{
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 1rem;
+   
+    display: none;
+    
+  
+}
+.dropdown-toggle{
+    background-color: #742700;
+}
+
+.dropdown-item{
+    background-color: black;
+}
+@media all and (max-width: 950px){
+.First-Page{
+    background-color: #1A120B;
+    background-image: url("images/Sandwitch.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#Mobile-Nav{
+    display: block;
+}
+.First-Page-Background{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+    display: none;
+   
+}
+
+.btn-group{
+    display: block;
+}
+
+    
+nav{
+    display: none;
+}
+.First-Page-Content{
+ 
+    height: 90vh;
+
+}
+
+
+.Logo-Mobile{
+    display: block;
+    height: 10vh;
+}
+.Logo-Text{
+    color: white;
+    padding: 5%;
+    font-size: 5vw;
+    text-align: center;
+}
+.First-Page-Description{
+    width: 80%;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 4rem;
+    padding: 10% 0.5rem;
+}
+.First-Page-Description h1{
+font-size: 5.5vw;
+
+
+}
+.First-Page-Description p{
+    font-size: 3vw;
+    
+}
+.Second-Page-Main-Content{
+    width: 100%;
+}
+.Image-Divider{
+    flex-direction: column;
+}
+.Second-Page-Side-Container{
+
+    display: none;
+}
+
+.Second-Page-Main-Content{
+    width: 10
+    0%;
+    background-color: white;
+    border-radius: 4rem;
+}
+
+.Second-Page-Main-Content div h1{
+    font-size: 2rem;
+}
+
+.Closing{
+    flex-direction: column;
+
+    width: 100%;
+}
+.Closing ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Closing ul li{
+text-align: center;
+
+}
+.Closing-list-Title{
+    text-align: center;
+   
+
+}
+.Closing-list{
+    text-align: center;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Closing-list li{
+    text-align: center;
+  
+}
+.CopyWrite{
+    text-align: center;
+}
+}
