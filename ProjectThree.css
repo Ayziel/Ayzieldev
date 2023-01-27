@@ -22,6 +22,7 @@ a{
     cursor: pointer;
 }
 
+
 /*#endregion Default*/
 
 /*#region FirstPage*/
@@ -149,6 +150,8 @@ width: 40%;
 }
 .Image-list-container{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .Image-Divider{
     display: flex;
@@ -162,7 +165,7 @@ width: 40%;
     border: 1px dashed brown;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+    width: 50%;
 
 }
 .Image-list-container li div{
@@ -177,6 +180,7 @@ margin-bottom: 1rem;
 .Image-list-container li img{
     width: 50%;
     height: 100%;
+   
     border-radius: 0.5rem;
     
 
@@ -504,6 +508,12 @@ font-size: 5.5vw;
 .Image-Divider{
     flex-direction: column;
 }
+.Image-Divider li{
+  
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+}
 .Second-Page-Side-Container{
 
     display: none;
@@ -556,3 +566,13 @@ text-align: center;
     text-align: center;
 }
 }
+
+#preloader{
+    background: #000 url("images/ProjectThreeLoader.gif") no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
