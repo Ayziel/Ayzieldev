@@ -34,6 +34,7 @@ ul{
     height: 100vh;
     width: 100vw;
     margin-bottom: 5%;
+    box-shadow: 0 12px 50px black;
 }
 .First-Page-Background{
     position: absolute;
@@ -93,6 +94,7 @@ nav{
 display: flex;
 color: white;
 align-items: center;
+
 
 }
 .First-Page-Description{
@@ -373,24 +375,26 @@ border-radius: 0.5rem;
     background-color: rgb(32, 32, 32);
     align-items: center;
     justify-content: space-around;
-    height: 100vh;
+    height: 100%;
     box-shadow: 0 -10px 30px black;
 }
 .Third-Page-Photo{
-    width: 55%;
-    height: 90%;
+    width:33%;
+
    
 }
 .Third-Page-Photo img{
+    padding: 5% 0;
     width: 100%;
-    height: 100%;
+  
     border-radius: 1rem;
     background-size: cover;
     
 }
 .Third-Page-Description{
-    width: 35%;
+    width: 40%;
     color: white;
+    padding: 3rem 0 ;
 
    
 }
@@ -398,6 +402,10 @@ border-radius: 0.5rem;
     color:#e47310;
 }
 
+.Third-Page-Description p{
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+
+}
 .Third-Page-Description h2{
     font-size: clamp(1.6rem, 2vw, 2rem);
 
