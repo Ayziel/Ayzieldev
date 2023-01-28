@@ -6,6 +6,6 @@ function Delay(duration){
 
 var loader =document.getElementById("preloader");
 window.addEventListener("load", async function(){
-    await Delay(500)
+    await Delay(0)
   loader.style.display = "none";  
 })

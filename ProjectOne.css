@@ -31,26 +31,37 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
-    background-color: #77a0b1;
+    padding: 0.5rem;
+    background-color: #374c55;
     margin-bottom: 1rem;
-}
-.Top-Contact, .Top-Icons{
-    list-style-type: none;
-    padding-inline-start: none;
-    display:flex;
-    color: white;
+    height: 3rem;
 }
 .Top-Contact li, .Top-Icons li{
     margin: 0 0.6rem;
     transition: 0.25s;
     font-size: 1.2rem;
+    padding: 5px 0px 0px;
+ 
+
 }
+
+.Top-Contact, .Top-Icons{
+    list-style-type: none;
+    display:flex;
+    color: white;
+ 
+}
+.Top-Icons{
+margin-top: 0.5rem;
+}
+
 .Top-Contact li{
-    font-family: 'Solitreo', cursive;
+    font-family: 'Mukta', sans-serif;
     font-size: 1.2rem;
-  
+    padding-top: 1rem;
 }
+
+
 .Top-Icons li:nth-child(4){
     margin-right: 1.5rem;
 }
@@ -58,6 +69,15 @@ p{
 .Top-Icons li:hover{
     transform: scale(1.5);
     color:#202847;
+}
+
+.Top-Icons li:nth-child(1):hover, .Top-Icons li:nth-child(3):hover{
+    transform: scale(1.5);
+    color:rgb(43, 121, 211);
+}
+.Top-Icons li:nth-child(2):hover, .Top-Icons li:nth-child(4):hover{
+    transform: scale(1.5);
+    color:rgb(211, 63, 43);
 }
 /*#endregion Top*/
 
@@ -80,17 +100,17 @@ p{
     list-style-type: none;
     padding-inline-start: none;
     display:flex;
-    color: #202847;
+    color: #06070a;
     align-items: center;
     height: 100%;
-    font-family: 'Mukta', sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight:400;
     font-size: clamp(0.85rem, 1vw, 1.2rem)
  
 }
 
 .Nav-List li{
-    margin: 0 1rem;
+    margin: 0 1.5rem;
     transition: 0.25s;
 }
 .Nav-List li:hover{
@@ -103,8 +123,10 @@ p{
     border: none;
     border-radius: 0.3rem;
     color: white;
+    transition: 0.25s;
 }
 .Book-btn:hover{
+    transform: scale(1.10);
     background-color: #4c6a74;
     color: white;
 }
@@ -114,12 +136,12 @@ p{
 /*#region FrontPage*/
 
 .carousel-caption{
-
     background-color: rgba(0,0,0,.7);
     border-radius: 1rem;
-    
 }
-
+.carousel-item{
+    transition: .5s;
+}
 /*#endregion FrontPage*/
 
 /*#region SecondPage*/
@@ -167,21 +189,25 @@ font-size: clamp(1.1rem, 4vw ,4rem)
 .Second-Page-Contact-Btn{
     padding: 0.7rem;
     padding-top: 1rem;
-    background-color:#80b4c5;
-    color: white;
+    background-color: white;
+    color: #638a97;
     border:none;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
     align-self: flex-start;
     margin-left: 0.5rem;
     transition: 0.25s;
-    font-family: 'Solitreo', cursive;
-    box-shadow: 1px 1px 3px #213c47; 
+    font-family: 'Mukta', sans-serif;
     font-size: 1.3rem;
+    transition: .1s;
+    border: 3px solid #638a97;
+    box-shadow:  3px 3px 3px black;
 }
 
 .Second-Page-Contact-Btn:hover{
     background-color: #638a97;
+    transform: scale(1.25);
     color: white;
+
 }
 
 .Second-Page-Photo{
@@ -333,19 +359,25 @@ font-size: 0.8rem;
     font-size: 3rem;
     padding: 0.5rem;
 }
-.Submit{
+.Submit-btn{
     background-color:#80b4c5;
     padding: 1rem;
     border: 1px solid rgb(197, 197, 197);
     border-radius: 0.4rem;
     box-shadow: 2px 2px 5px black ;
+    font-size: 1.1rem;
     font-weight:700;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Mukta', sans-serif;
     color: white;
-    transition: 0.25s;
+    transition: .1s;
+    box-shadow:  3px 3px 3px black;
+    transform: scale(.95);
 }
-.Submit:hover{
-    
+
+  
+
+.Submit-btn:hover{
+    transform: scale(1);
     background-color: #5b7e8a;
     color: white;
 }

@@ -22,6 +22,9 @@ a{
     cursor: pointer;
 }
 
+ul{
+    margin: 0;
+}
 
 /*#endregion Default*/
 
@@ -69,14 +72,18 @@ nav{
     list-style: none;
 }
 .Nav-links-Container li{
- padding: 1.2rem;
+ padding: 1rem;
  font-family: 'Prompt', sans-serif;
  font-size: clamp(1rem, 1.15vw, 1.15rem);
- 
+
+ transition: 0.25s;
+ height: 50%;
 }
 .Nav-links-Container li:hover{
     transform: scale(1.3);
-    color: rgb(224, 185, 11);
+    color: rgb(226, 140, 28);
+
+
    }
 /*#endregion Navigation*/
 
@@ -113,6 +120,7 @@ width: 40%;
     font-size: clamp(1rem, 1.2vw, 1.2rem);
     color: white;
     margin-left: 1rem;
+    transition: 0.15s;
   }
   .Order-Now-Btn:hover{
     background-color:rgb(116, 72, 15);
@@ -224,6 +232,7 @@ margin-bottom: 1rem;
 .card-group
 .cardss{
     aspect-ratio: 5 / 7;
+    transition: 0.5s;
 }
 
 .card-group,
@@ -358,7 +367,83 @@ border-radius: 0.5rem;
 /*#endregion SecondPage*/
 
 /*#region ThirdPage*/
+
 .Third-Page{
+    display: flex;
+    background-color: rgb(32, 32, 32);
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    box-shadow: 0 -10px 30px black;
+}
+.Third-Page-Photo{
+    width: 55%;
+    height: 90%;
+   
+}
+.Third-Page-Photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-size: cover;
+    
+}
+.Third-Page-Description{
+    width: 35%;
+    color: white;
+
+   
+}
+.Brown{
+    color:#e47310;
+}
+
+.Third-Page-Description h2{
+    font-size: clamp(1.6rem, 2vw, 2rem);
+
+}
+.Third-Page-Description h3{
+
+font-size: clamp(1.3rem, 1.5vw, 1.5rem);
+   
+}
+
+.Third-Page-Description h5{
+    font-size: clamp(1rem, 1.3vw, 1.3rem);
+}
+.Third-Page-Content{
+    display: flex;
+    margin-bottom: 3rem;
+
+}
+.Third-Page-Content div{
+padding: 1rem;
+margin: 1rem 0;
+
+}
+
+
+.Third-Page-Content img{
+    width: 60%;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  padding:  1rem;
+
+}
+
+.Third-Page-Content h3{
+
+  margin-bottom: 1rem;
+}
+.Third-Page-Content h5{
+
+    margin-bottom: 1rem;
+  }
+
+/*#endregion ThirdPage*/
+
+/*#region Last*/
+.Last-Page{
     display: flex;
     flex-direction: column;
     background-color: #0e0c0b;
@@ -382,10 +467,7 @@ list-style: none;
     margin-top: 0.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-.Closing ul li:nth-child(1){
-    font-size: clamp(1.3em, 1.5vw, 1.5rem);
-    margin-bottom: 1rem;
-}
+
 .CopyWrite{
     display: flex;
     justify-content: space-between;
@@ -399,19 +481,23 @@ list-style: none;
 }
 
 .Closing-list{
- display: flex;
+    display: flex;
     justify-content: start;
     align-items: center;
 }
 .Closing-list li{
     display: flex;
     margin: 0 0.5rem;
+    transition: 0.25s;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
  
-   }
-.Closing ul li a:hover{
-  color: #1A120B;
+}
+.Closing ul li:hover{
+    color:#e47310;
 
-   }
+}
+
 
 
 /*#endregion ThirdPage*/
@@ -440,6 +526,7 @@ list-style: none;
 .dropdown-item{
     background-color: black;
 }
+
 @media all and (max-width: 950px){
 .First-Page{
     background-color: #1A120B;
@@ -527,8 +614,61 @@ font-size: 5.5vw;
 }
 
 .Second-Page-Main-Content div h1{
-    font-size: 2rem;
+
+    font-size: clamp(1.6rem, 2vw, 2rem);
 }
+
+.Third-Page-Description h2{
+    text-align: center;
+    margin-top: 3rem;
+
+}
+.Third-Page-Description h3{
+    text-align: center;
+
+}
+.Third-Page-Description p{
+    text-align: center;
+
+}
+.Third-Page-Content{
+    margin-bottom: 0;
+}
+
+.Third-Page-Content img{
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0;
+}
+.Third-Page-Content div{
+order: 2;
+}
+.Third-Page-Photo{
+margin-top: 3rem;
+
+width: 100%;
+}
+
+.Third-Page{
+height: 100%;
+flex-direction: column;
+
+}
+
+.Third-Page-Photo{
+    width: 90%;
+    margin: 1rem;
+}
+.Third-Page-Description{
+
+    width: 100%;
+}
+.Third-Page-Content{
+    flex-direction: column;
+}
+
+
+
 
 .Closing{
     flex-direction: column;
@@ -540,20 +680,14 @@ font-size: 5.5vw;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 1rem 0;
+}
+.Closing ul h1, .Closing ul p, .Closing ul li, .Closing-list-Title{
+  text-align: center;
 }
 
-.Closing ul li{
-text-align: center;
-
-}
-.Closing-list-Title{
-    text-align: center;
-   
-
-}
 .Closing-list{
     text-align: center;
-   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -568,10 +702,11 @@ text-align: center;
 }
 
 #preloader{
-    background: #000 url("images/ProjectThreeLoader.gif") no-repeat center center;
-    background-size: 15%;
+    background: black url("images/ProjectThreeLoaderTwo.gif") no-repeat center center;
+    background-size: 30%;
     height: 100vh;
     width: 100%;
+    transition:5s;
     position: fixed;
     z-index: 100;
 }

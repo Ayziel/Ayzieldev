@@ -13,12 +13,12 @@ const startGame = () => {
     boxes.forEach(box => box.addEventListener('click', boxClicked))
 }
 
-function boxClicked(e) {
-    const id = e.target.id
+function boxClicked(Z) {
+    const id = Z.target.id
 
     if(!spaces[id]){
         spaces[id] = currentPlayer
-        e.target.innerText = currentPlayer
+        Z.target.innerText = currentPlayer
 
         if(playerHasWon() !==false){
             playerText.innerHTML = `${currentPlayer} has won!`
