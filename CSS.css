@@ -997,15 +997,18 @@ pre{
   p {
     font-family: "Jost", sans-serif;
     color: white;
-    font-size: 3vw;
+    font-size: 4vw;
     text-shadow: 5px 2px 3px#141414;
     font-weight: normal;
     margin-left: 0.5rem;
     margin-right: 1rem;
-  }
 
+  }
+.Second_Page_Paragraph_Container{
+  width: 90%;
+}
   h2 {
-    font-size: 8.5vw;
+    font-size: 9vw;
     width: 100%;
     margin: auto 0;
     font-family: "Ubunt", sans-serif;

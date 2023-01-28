@@ -511,6 +511,9 @@ list-style: none;
 /*#endregion ThirdPage*/
 
 
+/*#region MobileFixer */
+
+
 
 .Logo-Mobile{
     display: none;
@@ -535,6 +538,12 @@ list-style: none;
     background-color: black;
 }
 
+
+.divider{
+    display: none;
+}
+/*#endregion MobileFixer */
+
 @media all and (max-width: 950px){
 .First-Page{
     background-color: #1A120B;
@@ -547,6 +556,8 @@ list-style: none;
 
 #Mobile-Nav{
     display: block;
+    position: fixed;
+    z-index: 1;
 }
 .First-Page-Background{
     position: absolute;
@@ -628,7 +639,7 @@ font-size: 5.5vw;
 
 .Third-Page-Description h2{
     text-align: center;
-    margin-top: 3rem;
+    margin: 2rem 0;
 
 }
 .Third-Page-Description h3{
@@ -653,8 +664,8 @@ order: 2;
 }
 .Third-Page-Photo{
 margin-top: 3rem;
-
-width: 100%;
+width: 90%;
+margin: 1rem;
 }
 
 .Third-Page{
@@ -663,9 +674,8 @@ flex-direction: column;
 
 }
 
-.Third-Page-Photo{
-    width: 90%;
-    margin: 1rem;
+.divider{
+    display: block;
 }
 .Third-Page-Description{
 
