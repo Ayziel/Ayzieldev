@@ -128,6 +128,7 @@ list-style: none;
     text-align: center;
     position: relative;
     font-family: 'Montserrat Subrayada', sans-serif;
+
 }
 
 .play{
@@ -137,6 +138,36 @@ list-style: none;
     background-color: #39a936;
 }
 
+.PG::before, .Date::before,.Cost::before, .Duration::before {
+
+position: absolute;
+top:18%;
+left:15%;
+transform: translate(-50%, -50%) rotate(-30deg);
+font-size: 0.9rem;
+font-weight:bold;
+color: rgba(255, 255, 255, 0.392);
+text-shadow: 1px 1px 10px black;
+border-radius: 1rem;
+padding: .3rem;
+}
+
+.PG::before{
+    content: "RATED";
+}
+.Date::before{
+    content: "RELEASED";
+
+}
+
+.Cost::before{
+    content: "COST";
+
+}
+.Duration::before{
+    content: "DURATION";
+
+}
 /*#endregion Front Page */
 
 /*#region Second Page */
@@ -144,10 +175,11 @@ list-style: none;
 #Second-Page{
 
 display: flex;
+margin-bottom: 3%;
 
 }
 .Second-Page-Content{
-    width: 80%;
+    width: 100%;
     padding: 0% 10%;
 }
 .Description-Contianer{
@@ -206,10 +238,115 @@ width: 100%;
     width: 90%;
     height: 100%;
  }
-
+.Second-Page-Side{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+ 
  .Second-Page-Side ul{
 list-style: none;
 color: white;
+width: 50%;
+text-align: center;
+display: flex;
+
 
  }
+ .Second-Page-Side li{
+  margin-right: 1rem;
+  width: 100%;
+}
+.Second-Page-Side li:nth-child(3){
+ font-size: .8rem;    
+}
+ .Second-Page-Side img{
+  width: 80%;
+  margin-bottom: .3rem;
+    
+}
 /*#endregion Second Page */
+
+/*#region Third Page */
+#Third-Page{
+    height: 100vh;
+}
+.Third-Page-Categories{
+    height: 50%;
+}
+.Third-Page-Categories h1 {
+    color: #26373f;
+    font-size: 2rem;
+    margin: 0% .5%;
+}
+.Third-Page-Categories ul {
+display: flex;
+}
+.Third-Page-Categories li {
+width: 15%;
+list-style: none;
+margin: 1% .5%;
+}
+.Third-Page-Categories img{
+height: 100%;
+width: 100%;
+}
+
+/*#endregion Third Page */
+
+
+#Footer{
+    height: 20vh;
+    background-color: #000a0fd9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Footer-Icons{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.Footer-Icons ul{
+    display: flex;
+    list-style: none;
+}
+.Footer-Icons li{
+    margin: 1rem 1rem ;
+    color: rgba(255, 255, 255, .8);
+    transition:  .25s;
+}
+.Footer-Icons li:hover{
+    margin: 1rem 1rem ;
+    color: rgb(25, 119, 226);
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.Footer-Icons p{
+    margin: .5rem 00rem ;
+    color: rgba(255, 255, 255, .8);
+}
+.Footer-Icons p:nth-child(4){
+    margin: .5rem 00rem ;
+    color: rgba(255, 255, 255, .3);
+}
+
+
+
+
+
+#preloader{
+    background: #253f52 url("https://i.pinimg.com/originals/ff/83/b9/ff83b9c6abe5366bf7d8cc309b53e88d.gif") no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    transition:5s;
+    position: fixed;
+    z-index: 100;
+}
+
