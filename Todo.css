@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+padding: 0;
+margin: 0;
+position: relative;
+font-family: 'Montserrat', sans-serif;
+background-image: url("https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=100");
+background-size:cover;
+
+color: rgba(249,251,252,255)
+}
+#Front-Page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+.Container{
+    padding: .5rem .2rem;
+    border-radius: 0.3rem;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    color: black;
+    max-width: 30rem;
+    min-width: 20rem;
+
+ 
+}
+
+.Main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+}
+h1{
+  font-size: 1.3rem;
+  justify-self: flex-start;
+  color: black;
+}
+button{
+  background-color: rgba(58,58,60,255);
+  font-size: 1.2rem;
+  padding: .5rem .7rem;
+  border: black;
+  color: white;
+  border-radius: .3rem;
+  transition:  0.05s;
+}
+
+button:hover{
+  transform: scale(1.05);
+  background-color: rgba(50,50,60,255);
+}
+button:active{
+  transform: scale(.9);
+}
+/*#region Popup*/
+
+.Pop-up{
+  position: absolute;
+  background-color: black;
+  padding: 3%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition:  .25s;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  display: none;
+  z-index: 6;
+
+}
+.Pop-up-Display{
+  display: block;
+}
+
+input{
+  margin-top: 1rem;
+  padding: .3rem;
+}
+.Pop-up-Btn{
+  margin-top: 1rem;
+
+}
+
+.List-Container{
+
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  margin: .5rem 0rem;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  padding: 3% 1%;
+  border-radius: .3rem;
+  margin-top: 1rem;
+
+}
+
+.Finish-Btn, .Delete{
+margin-left: 1rem;
+font-size: 1rem;
+}
+.Finish-Btn:hover{
+background-color: rgb(2, 88, 2);
+}
+.Delete:hover{
+  background-color: red;
+  }
+.List-Text{
+  justify-self: flex-start;
+  margin-left: 1rem;
+}
+
+/*#endregion Popup*/
