@@ -27,13 +27,12 @@ entries.forEach(function(entry){
 })
 }, Navoptions);
 navI.observe(frontPage);
-
-
 const goMiddleOptions = {
   root: null,
   threshold:".9",
   rootMargin:"0px"
  };
+
  const goMiddle = new IntersectionObserver (function (entries, goMiddle){
  entries.forEach(function(entry){
    console.log(entry.target, entry.isIntersecting);
@@ -53,3 +52,13 @@ const goMiddleOptions = {
 
  goMiddle.observe(secondBox);
  
+ 
+let menu = document.querySelector(".Menu");
+let menuBtn = document.querySelector(".Menu-Btn");
+
+ menuBtn.addEventListener("click", function(){
+
+  menu.classList.toggle("Go-Middle");
+ });
+
+ alert("This page is not yet Responsive")

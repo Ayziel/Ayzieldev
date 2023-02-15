@@ -10,10 +10,8 @@ body{
   padding: 0;
   box-sizing: border-box;
   position: relative;
-
   font-family: 'Roboto', sans-serif;
 }
-
 body::-webkit-scrollbar {
   width: 0.2em;
   background-color: #F5F5F5;
@@ -52,11 +50,12 @@ li{
 
 
 .logo{
-  font-size: 1.8rem;
+ 
+  font-size: clamp(1.1rem, 1.8vw, 1.8rem);
 }
 
 /*#region Navbar*/
-nav{
+.Nav{
 width:100%;
 height: 10vh;
 position: fixed;
@@ -71,8 +70,7 @@ z-index: 1;
 h1{
   padding-left: 1rem;
   cursor: pointer;
-  font-size: 1.3rem;
- 
+  font-size: clamp(1.1rem, 1.3vw, 1.3rem);
 }
 .fa-regular{
   transition: .25s;
@@ -80,9 +78,7 @@ h1{
 h1:hover > .fa-regular{
   background-color: white;
   border-radius: 10rem;
-
 }
-
 .Nav-List{
   list-style: none;
   display: flex;
@@ -157,7 +153,8 @@ left: 0;
   
 }
 .Content h2{
-  font-size: 8rem;
+  font-size: clamp(1.3rem, 8vw, 8rem);
+
   margin-bottom: 1rem;
 }
 .Content p {
@@ -172,7 +169,7 @@ left: 0;
   color: white;
   border-color: rgba(255, 255, 255, .7);
   margin-left: 1.5rem;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 1.1vw, 1.1rem);
   transition: .25s ease;
   position: relative;
   overflow: hidden;
@@ -190,7 +187,7 @@ left: 0;
   border-radius: 100rem;
   background-color: rgba(102, 102, 102, .9);
   color:white;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   border: none;
   transition: .25s ease;
  }
@@ -203,7 +200,7 @@ left: 0;
   border-top: .1px solid gray;
   padding: 1rem 50% 1rem 1rem;
   text-align: start;
-  font-size: 2rem;
+  font-size: clamp(1rem, 2vw, 2rem);
   position: relative;
  }
  .Content-left-container::before{
@@ -212,12 +209,13 @@ content: "02";
 top:0;
 left: 0;
 transform: translate(-50%, -200%);
-font-size: 1rem;
+
+font-size: clamp(.8rem, 1vw, 1rem);
 }
 
  .Content-left-container p:nth-child(2){
   color: grey;
-  font-size: .9rem;
+  font-size: clamp(.8rem, .9vw, .9rem);
 
  }
 /*#endregion Front Page*/
@@ -254,12 +252,12 @@ flex-direction: column;
 }
 
 .Second-Page-Content h2{
-  font-size: 3rem;
+  font-size: clamp(1.2rem, 3vw, 3rem);
   letter-spacing:5px;
  
   }
   .Second-Page-Content h6{
-    font-size: .8rem;
+    font-size: clamp(.7rem, .8vw, .8rem);
     letter-spacing:10px;
     color: #7a7a7a;
     font-family: 'Montserrat', sans-serif;
@@ -269,7 +267,6 @@ flex-direction: column;
     color: #DC5F00;
 }
   .Second-Page-Box{
-   
     width: 80%;
     list-style: none;
     display: flex;
@@ -319,7 +316,7 @@ flex-direction: column;
  
 }
 .Third-Page-Content h3{
-  font-size: 1.3rem;
+  font-size: clamp(.8rem, 1vw, 1.3rem);
   letter-spacing:10px;
   color: #aaaaaa;
   font-family: 'Montserrat', sans-serif;
@@ -327,12 +324,12 @@ flex-direction: column;
 }
 
 .Third-Page-Content h2{
-  font-size: 5rem;
+  font-size: clamp(1.5rem, 5vw, 5rem);
   color: rgb(205, 205, 205);
   margin-bottom: 5%;
 }
 .Third-Page-Content p{
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 1.3vw, 1.3rem);
   color: rgb(205, 205, 205);
   margin-bottom: 15%;
 }
@@ -342,14 +339,13 @@ display: flex;
 }
 
 .Third-Page-Content li{
-font-size: .8rem;
+font-size: clamp(.65rem, .8vw, .8rem);
 color: white;
 list-style: none;
 margin: 1%;
- border: 1px solid rgba(205, 205, 205, .5);
- border-radius: 1rem;
- padding: .5rem;
- 
+border: 1px solid rgba(205, 205, 205, .5);
+border-radius: 1rem;
+padding: .5rem;
 }
 
 
@@ -362,8 +358,9 @@ margin: 1%;
 }
 .Third-Page-Image img{
   width: 70%;
-  height:80%;
+  height:80%; 
   border-radius: 1rem;
+
 }
 
 
@@ -383,10 +380,10 @@ footer{
   width: 100%;
 }
 .Footer-Nav h1{
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 .Follow{
-  font-size: 1.3rem;
+  font-size: clamp(.9rem, 1.3vw, 1.3rem);
   margin-right: 1rem;
 }
 .Footer-Nav ul{
@@ -397,7 +394,7 @@ margin-top: .5rem;
 }
 .Footer-Nav li{
 margin-right: 1rem;
-font-size: 1.5rem;
+font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 .Footer-Content{
   margin: 2rem 0;
@@ -408,11 +405,11 @@ font-size: 1.5rem;
   flex-direction: column;
 }
 .Footer-Content h1{
-  font-size: 4rem;
+  font-size: clamp(2rem, 4vw,4rem);
   margin-bottom: 2rem;
 }
 .Footer-Content h6{
-  font-size: 1.5rem;
+  font-size: clamp(1.1rem, 1.5vw,1.5rem);
   text-decoration: underline;
 }
 
@@ -426,7 +423,7 @@ margin-top: 3%;
 
 }
 .CopyWrite h3{
-  font-size: 1rem;
+  font-size: clamp(.8rem, 1vw,1rem);
 }
 
 .fa-instagram:hover{
@@ -470,10 +467,101 @@ margin-top: 3%;
   opacity: 0;
   transition: 1s ease;
 }
+.Go-Middle{
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
 
+
+
+
+
+
+.Mobile-Logo{
+  position: fixed;
+  top: 20px;
+  color: white;
+  display: flex;
+  font-size: 1.3rem;
+
+  
+}
+
+
+.Mobile-Logo i{
+
+  font-size: 1.6rem;
+  margin-right: .5rem;
+  
+}
+
+.Menu-Btn{
+  background-color: rgba(0, 0, 0, .8);
+  border-radius: .5rem;
+  color: white;
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  padding: .7rem 1.1rem;
+  border: none;
+  z-index: 2;
+  display: none;
+}
+
+.Menu{
+  background-color: rgba(0, 0, 0, .95);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  transition: .25s;
+  transform: translate(100%, 0);
+}
 
 .Go-Middle{
   transform: translate(0%, 0%);
   opacity: 1;
+}
+
+
+@media all and (max-width: 950px){
+  
+  .Menu-Btn{
+  display: block;
+  }
+  
+
+#Front-Page{
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1514043133987-e4801c95b2c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1555&q=80");
+    background-size:cover;
+    background-position-x: center;
+    box-shadow: 0 0 10rem black;
+   
+ 
+}
+.Mobile-Nav{
+ display: block;
+}
+.Nav{
+display: none;
+
+}
+.Content-Container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  
+}
+.Content{
+  text-align: start;
+
+  width: 100%;
+}
+.Content-left{
+  display: none;
+}
 
 }
