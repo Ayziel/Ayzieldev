@@ -20,7 +20,7 @@ function SentEmail() {
   function func(e)
   {
   event.preventDefault()
-  
+  alert("Message-Sent")
   console.log('not refreshed!');
   
   }

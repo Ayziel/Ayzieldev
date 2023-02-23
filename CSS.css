@@ -1,5 +1,20 @@
 /* Main CSS Page*/
+#Blob{
+  background-image:linear-gradient(to right, rgba(226, 226, 226, 0.9), rgba(26, 243, 236, 0.928));
+  border-radius: 50%;
+  filter: blur(50px);
+  opacity: 3%;
+  height: 1000px;
+  width: 1000px;
+  content: "Boy";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotates .25s infinite;
+  z-index: 5;
 
+}
 /*#region Default_Designs*/
 ::-webkit-scrollbar {
   display: none;

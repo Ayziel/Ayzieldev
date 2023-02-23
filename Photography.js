@@ -61,4 +61,6 @@ let menuBtn = document.querySelector(".Menu-Btn");
   menu.classList.toggle("Go-Middle");
  });
 
- alert("This page is not yet Responsive")
+ alert("This page is not yet Responsive");
+
+
