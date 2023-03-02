@@ -899,7 +899,9 @@ justify-content: center;
   padding: 1em;
   margin: auto;
   max-width: 100%;
-  min-width: 90%;
+  min-width: 450px;
+  max-height: 356px;
+
   width: 100%;
 }
 .Form_Name,
