@@ -770,13 +770,13 @@ p {
 }
 .WORK{
   position: absolute;
-  top:7rem;
+  top:3.5rem;
   right: 2.5rem;
   font-size: clamp(0.8rem, 23vw, 14rem);
   font-family: "Ubunt", sans-serif;
   color:#2e2e2e;
   z-index: -1;
-  
+  opacity: 60%;
 }
 .Third_Page{
   width: 100%;
