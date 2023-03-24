@@ -30,7 +30,8 @@
 }
 
 body {
-  background: #212121;
+  background: #212121;  
+  overflow-x: hidden;
  
 }
 
@@ -206,12 +207,15 @@ p {
 .FrontPage-Flex {
   display: flex;
   width: 100%;
+
+  overflow: hidden;
 }
 
 .FrontPage {
   height: 100vh;
   display: flex;
   flex-direction: column;
+
 }
 
 .Glitch {
